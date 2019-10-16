@@ -1,15 +1,28 @@
 package piscine
 
-import "fmt"
+import "github.com/01-edu/z01"
 
 func PrintComb() {
-	for i := 0; i <= 6; i++ {
-		for j := i+1; j <= 9; j++ {
-			for k :=j+1; k <= 9; k++ {
-				fmt.Printf("%d%d%d",i ,j ,k)
-				fmt.Printf(", ")
-			}
-		}
-	}
-	fmt.Printf(10)
+  var n rune
+  var m rune
+  var o rune
+  for n = 0; n <= 9; n++ {
+    for m = 0; m <= 9; m++ {
+      if m != n && m > n {
+        for o = 0; o <= 9; o++ {
+          if o != m && o > m {
+            z01.PrintRune(n + 48)
+            z01.PrintRune(m + 48)
+            z01.PrintRune(o + 48)
+            if !(n == 7 && m == 8 && o == 9) {
+              z01.PrintRune(',')
+              z01.PrintRune(' ')
+            }
+          }
+        }
+      }
+    }
+  }
+  z01.PrintRune(10)
 }
+
