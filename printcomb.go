@@ -1,4 +1,4 @@
-ackage piscine
+package piscine
 
 import "fmt"
 
