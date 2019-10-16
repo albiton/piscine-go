@@ -1,28 +1,15 @@
 package piscine
 
-import (
-	"github.com/01-edu/z01"
-)
+import "fmt"
 
-func PrintComb() {
-	for a := '0'; a <= '7'; a++ {
-		for b := '1'; b <= '8'; b++ {
-			for c := '2'; c <= '9'; c++ {
-				if a < b && b < c {
-					if a == '7' && b == '8' && c == '9' {
-						z01.PrintRune(a)
-						z01.PrintRune(b)
-						z01.PrintRune(c)
-					} else {
-						z01.PrintRune(a)
-						z01.PrintRune(b)
-						z01.PrintRune(c)
-						z01.PrintRune(',')
-						z01.PrintRune(' ')
-					}
-				}
+func PrintComb(){
+	for i:=0; i <= 6; i++{
+		for j:=i+1; j <= 9; j++{
+			for k:=j+1; k <= 9;k++{
+				fmt.Printf("%d%d%d",i,j,k)
+				fmt.Printf(", ")
 			}
 		}
 	}
-	z01.PrintRune(10)
+	fmt.Printf(10)
 }
