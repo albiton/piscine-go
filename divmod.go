@@ -1,10 +1,12 @@
 package piscine
 
-import "fmt"
+import (
+     "fmt"
+)
 
-func DivMod(a int, b int, division *int, modulo *int) {
-	*division = a / b
-	*modulo = a % b
+func DivMod(a int, b int, div *int, mod *int) {
+	*div = a/b
+	*mod = a%b
 	fmt.Print(division)
 	fmt.Print(modulo)
 }
