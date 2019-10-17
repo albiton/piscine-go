@@ -1,24 +1,24 @@
-package main
+package piscine
 
-import piscine "github.com/01-edu/z01"
+import "fmt"
 
 func PrintComb() {
 
-	a := 1
-	b := 2
-	for i := 0; i < =7; i++ {
-		for a = i + 1; a <= 8; j++ {
-			for b = a + 1 ; b <= 9; b++ {
-				z01.Print(i)
-				z01.Print(a)
-				z01.Print(b)
+	j := 1
+	k := 2
+	for i := 0; i <= 7; i++ {
+		for j = i + 1; j <= 8; j++ {
+			for k = j + 1; k <= 9; k++ {
+				fmt.Print(i)
+				fmt.Print(j)
+				fmt.Print(k)
 				if i < 7 {
-					z01.Print(",")
+					fmt.Print(", ")
 				} else {
-					z01.Print(10)
-				} 
+					fmt.Print("\n")
+				}
 			}
 		}
-		
 	}
+
 }
