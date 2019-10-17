@@ -1,22 +1,24 @@
-package printcomb
+package main
 
 import "github.com/01-edu/z01"
 
 func PrintComb() {
-	j := 1
-	k := 2
-	for i := 0; i <= 7; i++ {
-		for j = i + 1; j <= 8; j++ {
-			for k = j + 1; k <= 9; k++ {
-				z01.PrintRune(i)
-				z01.PrintRune(j)
-				z01.PrintRune(k)
-				if i < 7 {
-					z01.PrintRune(", ")
+
+	b := 1
+	c := 2
+	for a  := 0; a <= 7; a++ {
+		for b  = b + 1; b <= 8; b++ {
+			for c  = c + 1; c <= 9; c++ {
+				z01.PrintRune(a)
+				z01.PrintRune(b)
+				z01.PrintRune(c)
+				if a < 7 {
+					z01.PrintRune(44)
 				} else {
-					z01.PrintRune(10)			
-						      }
+					z01.PrintRune(10)
+				}
 			}
 		}
 	}
+
 }
