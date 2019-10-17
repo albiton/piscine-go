@@ -14,8 +14,8 @@ func PrintComb() {
 				if i < 7 {
 					z01.PrintRune(", ")
 				} else {
-					z01.PrintRune("\n")
-				}
+					z01.PrintRune(10)			
+						      }
 			}
 		}
 	}
