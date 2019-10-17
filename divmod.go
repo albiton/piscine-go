@@ -1,10 +1,10 @@
 package piscine
 
-func DivMod(a *int, b *int) {
-	var x int
-	var z int
-	x = *a / *b
-	z = *a % *b
-	*a = x
-	*b = z
+import "fmt"
+
+func DivMod(a int, b int, div *int, mod *int) {
+	*div = a / b
+	*mod = a % b
+	fmt.Print(div)
+	fmt.Print(mod)
 }
