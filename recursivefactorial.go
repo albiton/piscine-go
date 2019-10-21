@@ -1,6 +1,6 @@
 package piscine
 
-func IterativeFactorial(nb int) int {
+func RecursiveFactorial(nb int) int {
 	if nb >= 1 && nb < 20 {
 		result := 1
 		for i := 1; i <= nb; i++ {
