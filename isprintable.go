@@ -1,4 +1,4 @@
-package main
+package piscine
 
 func IsPrintable(str string) bool {
 	if str == "" {
