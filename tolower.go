@@ -1,4 +1,5 @@
 package piscine
+
 func ToLower(s string) string {
 	s1 := []rune(s)
 	for index, letter := range s1 {
