@@ -1,18 +1,12 @@
 package piscine
 
 func IsPrintable(str string) bool {
-	if str == "" {
-		return false
-	}
-	s := []rune(str)
-	for _, letter := range s {
-		if letter >= 'a' && letter <= 'z' {
-			continue
-		} else if letter >= 'A' && letter <= 'Z' {
-			continue
-		} else {
-			return false
+	strlbool := true
+	strRune := []rune(str)
+	for _, i := range strRune {
+		if i >= 0 && i <= 31 {
+			strlbool = false
 		}
 	}
-	return true
+	return strlbool
 }
