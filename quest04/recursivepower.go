@@ -4,10 +4,10 @@ func RecursivePower(nb int, power int) int {
 	if power < 0 {
 		return 0
 	}
-
-	result := 1
-	for i := 0; i < power; i++ {
-		result = result * nb
+	if power == 0 {
+		return 1
 	}
-	return result
+	res := 1
+	res = nb * RecPow(nb, power-1)
+	return res
 }
