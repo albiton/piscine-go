@@ -8,6 +8,6 @@ func RecursivePower(nb int, power int) int {
 		return 1
 	}
 	res := 1
-	res = nb * RecPow(nb, power-1)
+	res = nb * RecursivePower(nb, power-1)
 	return res
 }
