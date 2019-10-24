@@ -1,4 +1,4 @@
-package student
+package piscine
 
 func AppendRange(min, max int) []int {
 	var slice []int
