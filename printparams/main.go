@@ -1,17 +1,19 @@
 package main
 
 import (
-	"os"
-
 	"github.com/01-edu/z01"
+	"os"
 )
 
 func main() {
-	args := os.Args[1:]
-	for _, arg := range args[1:] {
-		for _, k := range arg {
-			z01.PrintRune(k)
-		}
-		z01.PrintRune(10)
+	for _, s := range os.Args[1:] {
+		PrintRuneArray([]rune(s))
+		z01.PrintRune('\n')
+	}
+}
+
+func PrintRuneArray(runes []rune) {
+	for _, ch := range runes {
+		_ = z01.PrintRune(ch)
 	}
 }
